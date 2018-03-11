@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}	<!-- {% include nav.html nav=site.data.menu %} -->
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+	      {% include image_slider.html %}
+	      {% include projects.html %}
+
+	      {% include kien_giang.html %}
+	      
+	     
+	      
+	      {% include picturefill.html %}  
+	      {% include suscribe.html %}	    
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

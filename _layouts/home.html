@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<!--CORRECTLY WORKING -->
+<!-- main.cf -->
+<section class="blogsection">
+	<main role="role" class="cf blog">
+	 	{% if site.posts.size > 0 %}
+	 
+	 	<!-- h2.post-list-heading -->
+	    <h2 class="post-list-heading blogtitle">{{ page.list_title | default: "NEWS" }}</h2>
+	    <ul class="post-list">
+	     
+	     {% for post in site.posts %}
+	     	
+	     	<li class="blogcontainer">
+	       
+	        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+	        
+	        	<h3 class="blogtitle">
+					<a class="postlink" href="{{ post.url | absolute_url }}">
+					{{ post.title | escape }}
+	          		</a>
+	        	</h3>
+	        
+	        <span class="post-meta">date:  {{ post.date | date: date_format }}</span>
+	        <span class="post-author">| Author: {{ post.author }}</span>
+	        <span class="post-excerpt blogexcerpt">{% if site.show_excerpts %}{{ post.excerpt | strip_html }}{% endif %}</span>
+	       <a href="#" class="learnmoretextlink right">READ MORE</a>
+	       
+	        <!-- <p>{% if site.show_excerpt %}
+	          {{ post.excerpt }}
+			  {% endif %}</p> -->
+			
+			</li><!-- end li .blogcontainer -->
+			
+	      {% endfor %}
+	      
+	    </ul><!-- end .post-list -->
+	
+	  {% endif %}
+	</main>
+</section>
+
+
+ 
+     

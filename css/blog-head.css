@@ -1,0 +1,443 @@
+main {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	
+}
+
+.post-wrapper {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	overflow: auto;
+}
+
+.posts, .archive {
+	max-width: 960px;
+	padding: .5em 2.5%;
+	margin: 0 auto;
+	
+}
+
+.page-title {
+	display: block;
+	font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+.post-meta {
+	margin-top: .5em;
+	margin-bottom: .7em;
+	border-bottom-style: 1px solid #f2f2f2;
+	display: inline-block;
+	float: left;
+	margin-right: 7px;
+	font-weight: 400;
+	font-family: 'Open Sans', 'Proxima Nova', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.01em;
+	color: #999;
+}
+
+.post-author {
+	display: block;
+	position: relative;
+	top: 6px;
+	margin-right: 25px;
+	font-weight: 400;
+	font-size: .85em;
+	font-family: 'Open Sans', 'Proxima Nova', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.01em;
+	color: #999;	
+}
+
+.page-content {
+	font-size: 90%
+	display: block;
+	color: #555;
+	line-height: 1.9;
+	background-color: white;
+	margin-bottom: 3em;
+	overflow: auto;
+	
+}
+
+
+
+.post-list-heading {
+	padding: .1em .1em .1em .4em;
+	text-align: center;
+	display: inline-block;
+	width: auto;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.4em;
+	border: 1px solid rgba(0,0,0,0.5);
+	letter-spacing: .25em;
+	position: relative;
+	left: -100px;
+}
+
+.post-list li {
+	height: 100px;
+	width: 100%;
+	margin-left: -35px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	list-style-type: none;
+	text-align: left;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-shadow: none;
+	color: #333;
+	line-height: 0.4;
+	font-size: 12px;
+	
+}
+
+.post-link a:hover {
+	font-size: 1.75em;
+	text-decoration: none;
+	font-family: 'Oswald', 'Proxima Nova', Helvetica, Arial, sans-serif;
+	color: #333;
+	display: block;
+	float: left;
+	text-align: left;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	padding-bottom: 0;
+	
+}
+
+
+.post-excerpt {
+	color: #f2f2f2;
+}
+
+
+
+aside {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	text-align: left;
+	padding: 1em 2em;
+	background-color: #f2f2f2;
+	color: white;
+	clear: left;
+}
+
+
+
+.post-list-heading {
+	color: black;
+	background: none;
+	text-align: left;
+}
+
+.post {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	display: block;
+	padding: 1em 1.5em;
+	max-width: 800px;
+	background-color: white;
+	float: none;
+	border: 1px solid yellow;
+	
+}
+
+article .posts {
+	display: block;
+	border-bottom: 2px solid black;
+}
+
+
+
+
+section .post-links {
+	color:red;
+}
+
+.prevLink {
+	display: block;
+	color: black;
+	
+	}
+
+.nextLink {
+	
+}
+	
+	
+	
+.page-content {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	overflow: auto;
+	margin-bottom: 3em;
+}
+
+
+
+.archives li a {
+	display: inline-block;
+	margin-right: 10px;
+	list-style-type: none;
+	color: #333;
+	margin-left: 10px;
+	text-decoration: none;
+	background-color: #d0d0d0;
+	padding: .05em .025em;
+	border-radius: 3pt;
+	text-transform: uppercase;
+	padding-left: 1em;
+	padding-right: .4em;
+	font-size: .57em;	
+	
+}
+
+/* -------------------------------------------------- 
+   article styles
+-----------------------------------------------------*/
+
+article header {
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #aaa;
+}
+article h2 {
+	font-size: 2em;
+	font-weight: 400;
+	line-height:1.2;
+	color: #42659A;
+	margin-bottom:0.2em;
+}
+article h3 {
+	font-weight: 400;
+	font-size: 1.4em;
+	color: #42659A;
+	margin-bottom: 0;
+}
+article h2 a {
+	text-decoration:none;
+}
+article time {
+	display: block;
+	font-size: 0.8em;
+	color: #666;
+	margin-bottom: 0;
+}
+a.more {
+	display: block;
+	text-align: right;
+}
+a.more:before {
+	content: '[';
+}
+a.more:after {
+	content: ']';
+}
+p code {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+pre {
+	font-size: 1.4em;
+	line-height: 1.6;
+	color: white;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+	border-left: 1em solid #42659A;
+	background: #666;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 90%;
+}
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+}
+blockquote {
+	font: 1.5em 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
+	font-weight: 400;
+	color: #6d6d6d;
+	padding-left: 1em;
+	margin: 1em 0;
+	border-left: 4px solid #6d6d6d;
+}
+cite {
+	display: block;
+	font-size: 0.8em;
+	margin-top: 0.5em;
+}
+article footer {
+	background: none;
+	border-top: 1px solid #aaa;
+	font-size: 0.8em;
+	padding: 1em 0;
+}
+dt {
+	font-family: 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #42659A;
+	margin-bottom:0;
+}
+dd {
+	margin-bottom:1em;
+}
+.taglist time {
+	display: inline;
+	font-size: 1em;
+}
+.pagination {
+	width: 100%;
+	font-size: 1.2em;
+}
+.prevLink {
+	float: left;
+	width: 50%;
+}
+.nextLink {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.previous:before {
+	content: '\00ab\00a0';
+}
+.next:after {
+	content: '\00a0\00bb';
+}
+/* -------------------------------------------------- 
+   archive styles
+-----------------------------------------------------*/
+.archive ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.archive h3 {
+	font-size: 1.4em;
+}
+.archive h3:target {
+	color: #dc8b21;
+	font-size: 1.6em;
+}
+.archive li {
+	margin-bottom: 0.5em;
+}
+.tag-cloud {
+	max-width: 600px;
+}
+.tag-cloud li {
+	display: inline-block;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+}
+.tag-cloud a {
+	text-decoration: none;
+	font-size: 0.8em;
+	background: #42659A;
+	color: white;
+	padding: 0.125em 0.5em;
+	border-radius: 0.25em;
+}
+.return {
+	display: none;
+}
+h3:target + .taglist .return {
+	display: block;
+}
+.return a {
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #dc8b21;
+}
+.return a:before {
+	content: '\25b2\00a0';
+}
+/* -------------------------------------------------- 
+   sidebar styles
+-----------------------------------------------------*/
+aside {
+	padding: 0 1em 0;
+}
+aside h3 {
+	color: #4d4d4d;
+	font-size: 1.4em;
+	margin-top: 1em;
+	margin-bottom: .4em;
+}
+aside p {
+	margin-left: 1em;
+}
+aside ul {
+	list-style: none;
+	padding: 0;
+	margin:0;
+	margin-left: 1em;
+}
+aside li {
+	margin-bottom: 0.5em;
+}
+.social {
+	display: flex;
+	justify-content: space-around;
+}
+.social a {
+	text-indent: -9000em;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+}
+.github {
+	background: url(../images/github.svg) no-repeat;
+}
+.fb {
+	background: url(../images/facebook.svg) no-repeat;
+}
+.linked {
+	background: url(../images/linkedin.svg) no-repeat;
+}
+.twitter {
+	background: url(../images/twitter.svg) no-repeat;
+}
+	
+/* -------------------------------------------------- 
+   main footer styles
+-----------------------------------------------------*/
+.page-footer {
+	background: #4d4d4d;
+	padding: 2em 1em;
+	margin-top: 1em;
+	color: white;
+}
+.legal {
+	font-size: .7em;
+	margin: 0;
+}
+.page-footer a {
+	color: white;
+}
+.top-link {
+	text-align: center;
+	margin-bottom: 2em;
+}
+.top-link:before {
+	content: '\25b2\00a0';
+}
+

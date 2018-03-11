@@ -1,0 +1,74 @@
+
+
+<!------------------------------------------------------------------------------------------------------------>
+<section class="blogsection">
+	<article role=main >
+		
+		{% if site.posts.size > 0 %}
+<!------------------------------------------------------------------------------------------------------------>				
+		<!-- h2.post-list-heading -->
+	    <h2 class="post-list-heading blogtitle">{{ page.list_title | default: "NEWS" }}</h2>
+		<!-- <h2 class="heading">OUR BLOG</h2> -->
+<!------------------------------------------------------------------------------------------------------------>				
+		<!-- .breaker -->
+		<div class="breaker"></div>
+<!------------------------------------------------------------------------------------------------------------>				
+		{% for post in site.posts %}
+		<li class="blogcontainer">			        
+	    	<div class="blogbox">
+				<div class="blogentry w-row">
+<!------------------------------------------------------------------------------------------------------------>							
+					<!-- LEFT post-image -->
+					<div class="w-col w-col-2">
+						<div class="postimage"><img src="images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2.JPG" width="2304" srcset="images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2-p-1080.jpeg 1080w, images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2-p-1600.jpeg 1600w, images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2-p-2000.jpeg 2000w, images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2-p-2600.jpeg 2600w, images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2-p-3200.jpeg 3200w, images/dÆ°Æ¡ng-thá»-hÃ--11-copy-2.JPG 4608w" sizes="(max-width: 479px) 75vw, (max-width: 767px) 300px, (max-width: 991px) 85.59375px, 115.359375px"></div>
+            		</div>
+					
+<!------------------------------------------------------------------------------------------------------------>	
+					<!-- RIGHT BLOG POST CONTAINER -->
+					<div class="w-col w-col-10">
+				
+<!------------------------------------------------------------------------------------------------------------>
+					<!-- post-link --> 
+					<h3 class="blogtitle">
+						
+						<a class="postlink w-inline-block" href="{{ post.url | relative_url }}"> {{ post.title | escape }}
+	          			</a>
+	          			
+	        		</h3>
+	        		
+	        		<!-- <p class="blogexcerpt">Deepest gratitude to the kind and compassionate friends and philanthropists who have care for these precious family. We would like to recognize the deep suffering of these family and to also recognize the deep compassion of the donors who loved these family. Here are the before and after picture of Sahaya Vietnam new model housing project. Each home only cost $2,200 to built.May all be free from poverty and suffering</p> -->
+
+	        		
+	        		<span class="post-excerpt blogexcerpt">{% if site.show_excerpts %}{{ post.excerpt | strip_html }}{% endif %}</span>
+						<p>{% if site.show_excerpt %}
+						{{ post.excerpt }}
+						{% endif %}
+						</p>
+					<span
+	        		
+<!------------------------------------------------------------------------------------------------------------>	        		
+				
+					{% endfor %}
+					<!-- Time, Author -->
+					<div class="postcredits">
+						
+						
+						<!-- <div class="author">Feb. 24, 2017</div> -->
+						{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+						<span class="post-meta">date:  {{ post.date | date: date_format }}</span>
+
+						<!-- <div class="author">Posted by: Chung</div> -->
+						<span class="post-author">| Posted by: {{ post.author | strip_html }}</span>
+	       			</div>
+              
+					<!-- Blog excerpt --->
+					
+										
+					
+				</div>
+          	</div>
+        </div>
+	</article>
+	{% endif %}
+</section>
+<!------------------------------------------------------------------------------------------------------------>

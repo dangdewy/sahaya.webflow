@@ -1,0 +1,64 @@
+- text: About
+  url: /about.html
+  subitems:
+    - text: Mission
+      url: /mission.html
+    - text: Housing
+      url: /housing.html
+    - text: Bicycle
+      url: /bicycle.html  
+    - text: Education
+      url: /education.html    
+- text: Events
+  url: /events.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Reports
+  url: /annual-reports.html
+  subitems:
+    - text: Second menu (sub)
+      url: /second-menu/second-menu-sub/
+- text: Media
+  url: /media.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Supporters
+  url: /donors.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Blog
+  url: /blog.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Donate
+  url: /donate.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Contact
+  url: /contact.html
+  subitems:
+    - text: First menu (sub)
+      url: /first-menu/first-menu-sub/
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
